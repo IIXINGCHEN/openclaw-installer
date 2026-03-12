@@ -2,11 +2,18 @@
   "name": "openclaw-cli",
   "version": "1.0.0",
   "description": "OpenClaw CLI - AI Development Tools",
+  "main": "src/index.js",
   "bin": {
     "openclaw": "./bin/openclaw.js"
   },
+  "scripts": {
+    "postinstall": "chmod +x bin/openclaw.js"
+  },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
   },
   "keywords": ["cli", "openclaw", "ai"],
   "author": "OpenClaw Team",
